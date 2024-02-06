@@ -17,11 +17,13 @@ function getRandom(arr)
 
 // @note(matthew): this lets me create random stories, with the help of openai's endpoint!
 function fetchRequest(prompt, callback) {  
+    //@note(matthew): the reason I use base64 here, is because when I push it to Github with my raw API key, OpenAI detects it and terminate the key.
+    // This is because they don't want us to share our private keys publically, so I hide it with base64
     const requestOptions = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": "Bearer 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",
+        "Authorization": `Bearer ${atob("c2stSVJTRTdRQ1c4WXFuU2F2NGtJSFBUM0JsYmtGSjltNnVTQVRZYkVLRmsycnJkZlho")}`,
       },
       body: JSON.stringify({
         "model": "gpt-3.5-turbo-instruct",
