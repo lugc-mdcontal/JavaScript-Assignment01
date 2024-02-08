@@ -23,7 +23,7 @@ function fetchRequest(prompt, callback) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${atob("c2stSVJTRTdRQ1c4WXFuU2F2NGtJSFBUM0JsYmtGSjltNnVTQVRZYkVLRmsycnJkZlho")}`,
+        "Authorization": `Bearer ${atob("c2stSzdyVm15dXB0aVg1Vm9CSGJpS2pUM0JsYmtGSmdTalFteTRndnVlY3NUZnQ3ZkxV")}`,
       },
       body: JSON.stringify({
         "model": "gpt-3.5-turbo-instruct",
